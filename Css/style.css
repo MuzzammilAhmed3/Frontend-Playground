@@ -1,0 +1,381 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  color: white;
+  background-color: #0202c9;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #0077ff;
+  padding: 8px 12px;
+}
+
+.nav-logo {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.search input {
+  padding: 8px;
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  width: 270px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  left: 79px;
+}
+
+.search button {
+  color: white;
+  background-color: #101010;
+  border: 1px solid #101010;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111827;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 14px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+.topbar {
+  background-color: #e10600;
+  color: #ffffff;
+  padding: 9px 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.topbar marquee {
+  display: block;
+}
+
+.navbar {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background-color: #0b0b0b;
+  border-bottom: 1px solid #252525;
+}
+
+.nav-logo {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.nav-logo p::first-letter {
+  color: #e10600;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #d4d4d4;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background-color: #e10600;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search input {
+  width: 185px;
+  padding: 10px 14px;
+  color: #ffffff;
+  background-color: #171717;
+  border: 1px solid #363636;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: border-color 0.3s ease;
+}
+
+.search input::placeholder {
+  color: #999999;
+}
+
+.search input:focus {
+  border-color: #e10600;
+}
+
+.search button {
+  padding: 10px 14px;
+  color: #ffffff;
+  background-color: #e10600;
+  border: 1px solid #e10600;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search button:hover {
+  background: #ffffff;
+  color: #111111;
+  border-color: #ffffff;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #080808;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.5) 55%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin-left: 170px;
+  padding: 40px 7%;
+  text-align: left;
+  animation: heroEntrance 1s ease;
+}
+
+.hero-content::before {
+  content: "EXPERIENCE THE EXTRAORDINARY";
+  display: inline-block;
+  margin-bottom: 22px;
+  padding-left: 12px;
+  border-left: 3px solid #e10600;
+  color: #f3f3f3;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.hero-content h1 {
+  max-width: 850px;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* PARAGRAPH */
+.hero-content p {
+  max-width: 560px;
+  color: #dedede;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  padding: 15px 25px;
+  background: #e10600;
+  color: #ffffff;
+  border: 1px solid #e10600;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #111111;
+  border-color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+@keyframes heroEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
