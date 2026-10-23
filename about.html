@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Page</title>
+    <title>About | My Projects</title>
     <link rel="stylesheet" href="./Css/style.css" />
   </head>
   <body>
-    <!-- HEADER -->
     <header class="header">
       <!-- TOPBAR -->
       <section class="topbar">
@@ -17,22 +16,99 @@
       <!-- NAVBAR -->
       <nav class="navbar">
         <!-- LOGO -->
-        <a class="nav-logo" href="./index.html">LOGO</a>
+        <a class="nav-logo" href="./index.html">MY <span>PROJECTS</span></a>
 
         <!-- NAV Links -->
         <div class="nav-links">
-          <a href="./index.html">Home</a>
+          <a class="active" href="./index.html">Home</a>
           <a href="./about.html">About</a>
           <a href="./service.html">Services</a>
           <a href="./contact.html">Contact</a>
         </div>
 
         <!-- SEARCH BUTTON -->
-        <div class="search">
-          <input type="search" placeholder="Search..." />
-          <button type="button">Search</button>
-        </div>
+        <form class="search" action="./service.html">
+          <input type="search" name="q" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </form>
       </nav>
     </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <span class="section-tag">OUR STORY</span>
+          <h1>About <span>My Projects.</span></h1>
+          <p>A place for creative ideas, practical learning, and modern digital experiences.</p>
+          <a class="btn" href="./service.html">Explore Our Services</a>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="about-visual">
+          <div class="about-visual-inner">
+            <span class="about-symbol">&lt;/&gt;</span>
+            <h2>Think. Create. Build.</h2>
+            <p>Turning ideas into digital experiences.</p>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">WHO WE ARE</span>
+          <h2>We Believe in <span>Great Ideas.</span></h2>
+          <p>
+            My Projects is a digital space dedicated to exploring creativity, web development, and
+            practical project building.
+          </p>
+          <p>
+            Our goal is to make ideas easier to understand and turn them into useful, attractive,
+            and responsive digital experiences.
+          </p>
+          <a class="btn" href="./contact.html">Get In Touch</a>
+        </div>
+      </section>
+
+      <section class="section values-section">
+        <div class="section-heading">
+          <span class="section-tag">WHAT DRIVES US</span>
+          <h2>Our Core <span>Values</span></h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="project-card">
+            <div class="card-icon">01</div>
+            <h3>Creativity</h3>
+            <p>We explore fresh ideas and build designs that stand out.</p>
+          </article>
+
+          <article class="project-card">
+            <div class="card-icon">02</div>
+            <h3>Quality</h3>
+            <p>We focus on clean code, useful features, and thoughtful design.</p>
+          </article>
+
+          <article class="project-card">
+            <div class="card-icon">03</div>
+            <h3>Learning</h3>
+            <p>We believe every project is an opportunity to develop new skills.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div>
+          <span class="section-tag">READY TO CREATE?</span>
+          <h2>Let's Build Something Great.</h2>
+          <p>Explore our services or get in touch to discuss an idea.</p>
+        </div>
+        <a class="btn" href="./contact.html">Contact Us</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="nav-logo" href="./index.html">MY <span>PROJECTS</span></a>
+      <p>Creating ideas. Building experiences.</p>
+      <p class="copyright">© 2026 My Projects. All rights reserved.</p>
+    </footer>
   </body>
 </html>

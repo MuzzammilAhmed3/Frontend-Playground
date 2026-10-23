@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
+    <title>Contact | My Projects</title>
     <link rel="stylesheet" href="./Css/style.css" />
   </head>
   <body>
-    <!-- HEADER -->
     <header class="header">
       <!-- TOPBAR -->
       <section class="topbar">
@@ -17,22 +16,111 @@
       <!-- NAVBAR -->
       <nav class="navbar">
         <!-- LOGO -->
-        <a class="nav-logo" href="./index.html">LOGO</a>
+        <a class="nav-logo" href="./index.html">MY <span>PROJECTS</span></a>
 
         <!-- NAV Links -->
         <div class="nav-links">
-          <a href="./index.html">Home</a>
+          <a class="active" href="./index.html">Home</a>
           <a href="./about.html">About</a>
           <a href="./service.html">Services</a>
           <a href="./contact.html">Contact</a>
         </div>
 
         <!-- SEARCH BUTTON -->
-        <div class="search">
-          <input type="search" placeholder="Search..." />
-          <button type="button">Search</button>
-        </div>
+        <form class="search" action="./service.html">
+          <input type="search" name="q" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </form>
       </nav>
     </header>
+
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="page-hero-content">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h1>Let's Talk <span>Ideas.</span></h1>
+          <p>Have a question or a project in mind? Send us a message.</p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-info">
+          <span class="section-tag">CONTACT DETAILS</span>
+          <h2>Let's Start a <span>Conversation.</span></h2>
+          <p>Tell us about your idea, ask a question, or discuss your next creative project.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">@</div>
+            <div>
+              <h3>Email</h3>
+              <p>hello@example.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">⌖</div>
+            <div>
+              <h3>Location</h3>
+              <p>Available for online projects</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">◷</div>
+            <div>
+              <h3>Working Hours</h3>
+              <p>Monday – Friday</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <h2>Send a <span>Message</span></h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="What is this about?"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn form-submit" type="submit">Send Message →</button>
+          <p class="form-note">Demo form: connect a backend or form service to receive messages.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="nav-logo" href="./index.html">MY <span>PROJECTS</span></a>
+      <p>Creating ideas. Building experiences.</p>
+      <p class="copyright">© 2026 My Projects. All rights reserved.</p>
+    </footer>
   </body>
 </html>
