@@ -303,7 +303,7 @@
   margin-left: 170px;
   padding: 40px 7%;
   text-align: left;
-  animation: heroEntrance 1s ease;
+  animation: heroEntrance 1s linear;
 }
 
 .hero-content::before {
